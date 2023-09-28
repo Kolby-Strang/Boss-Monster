@@ -32,51 +32,63 @@
 
 
     <main class="container-fluid p-4">
-        <div class="row">
-            <div class="col-6 col-md-3 ">
+        <div class="row justify-content-around">
+            <div class="col-5 col-md-3 ">
                 <div class="row hero-card">
                     <div class="col-12 d-flex justify-content-between">
                         <p>Slate Slabrock</p>
                         <img src="https://omori.wiki/images/thumb/1/19/FA_hero_charm.png/120px-FA_hero_charm.png">
                     </div>
                     <div class="col-12 d-flex justify-content-between">
-                        <p>HP:</p>
-                        <p id="Slate Slabrock hp">100</p>
+                        <div class="health-container">
+                            <div class="health" id="slateHealth">
+                                .
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 d-flex justify-content-between">
                         <p>DAMAGE:</p>
                         <p>5</p>
                     </div>
                     <div class="col-12 text-center">
-                        <button onclick="healHero('Slate Slabrock')" class="btn btn-success">
+                        <button id="Slate Slabrock heal" onclick="healHero('Slate Slabrock')" class="btn btn-success">
                             HEAL - 20G
+                        </button>
+                        <button id="Slate Slabrock revive" onclick="reviveHero('Slate Slabrock')"
+                            class="btn btn-danger d-none">
+                            Revive - 100G
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3 ">
+            <div class="col-5 col-md-3 ">
                 <div class="row hero-card">
                     <div class="col-12 d-flex justify-content-between">
                         <p>Flint Ironstag</p>
-                        <img src="https://omori.wiki/images/thumb/1/19/FA_hero_charm.png/120px-FA_hero_charm.png">
+                        <img src="images/hero0.png">
                     </div>
                     <div class="col-12 d-flex justify-content-between">
-                        <p>HP:</p>
-                        <p id="Flint Ironstag hp">50</p>
+                        <div class="health-container">
+                            <div class="health" id="flintHealth">
+                                .
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 d-flex justify-content-between">
                         <p>DAMAGE:</p>
                         <p>10</p>
                     </div>
                     <div class="col-12 text-center">
-                        <button class="btn btn-success" onclick="healHero('Flint Ironstag')">
+                        <button id="Flint Ironstag heal" class="btn btn-success" onclick="healHero('Flint Ironstag')">
                             HEAL - 20G
+                        </button>
+                        <button id="Flint Ironstag revive" class="btn btn-danger d-none"
+                            onclick="reviveHero('Flint Ironstag')">
+                            Revive - 100G
                         </button>
                     </div>
                 </div>
             </div>
-
-            <div class="col-6 col-md-3">Person 2</div>
         </div>
 
 
@@ -87,8 +99,8 @@
                         .
                     </div>
                 </div>
-                <p class="fs-1 boss-text">GOOEY BOY</p>
-                <img onclick="attackBoss()" src="images/monster.png">
+                <p class="fs-1 boss-text" id="bossName">GOOEY BOY</p>
+                <img onclick="attackBoss()" src="images/monster.png" id="bossImg">
                 <p class="fs-3 boss-text">Level: <span id="bossLvl">1</span></p>
             </div>
         </div>

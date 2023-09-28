@@ -30,7 +30,6 @@ p {
     color: white;
     padding: .5em;
     border: solid white 2px;
-    width: min-content;
 }
 
 .hero-card>div>img {
@@ -40,7 +39,7 @@ p {
 .health-container {
     background-color: white;
     width: 100%;
-    color: white;
+    text-align: center;
 }
 
 .health {
