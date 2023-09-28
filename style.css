@@ -1,0 +1,54 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1473773508845-188df298d2d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80);
+    background-size: cover;
+}
+
+header {
+    background-color: gray;
+    color: white;
+    padding: .5em
+}
+
+p {
+    margin: 0;
+}
+
+.boss-container {
+    background-image: url(https://images.unsplash.com/photo-1596237563267-84ffd99c80e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvcmVzdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60);
+    background-size: cover;
+    border: solid white 2px;
+    border-radius: 4px;
+}
+
+.boss-container>img {
+    max-height: 40vh;
+}
+
+.hero-card {
+    background-color: rgb(75, 75, 75);
+    border-radius: 8px;
+    color: white;
+    padding: .5em;
+    border: solid white 2px;
+    width: min-content;
+}
+
+.hero-card>div>img {
+    height: 4em;
+}
+
+.health-container {
+    background-color: white;
+    width: 100%;
+    color: white;
+}
+
+.health {
+    background-color: red;
+    width: 100%;
+    color: red;
+}
+
+.boss-text {
+    text-shadow: 0 0 5px black;
+}
